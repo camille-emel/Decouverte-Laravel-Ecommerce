@@ -3,15 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'welcome';
 });
 
 Route::get('/product', function (){
-    return view('product');
+    return 'product';
 });
 Route::get('/product/{id}', function ($id){
-    return view('product'. $id);
+    return 'product'. $id;
 });
 Route::get('/cart', function (){
-    return view('cart');
+    return 'cart';
 });
