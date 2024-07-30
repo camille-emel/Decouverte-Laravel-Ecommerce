@@ -8,6 +8,6 @@ class CartController extends Controller
 {
     public function viewCart()
     {
-        return 'Panier';
+        return view('cart',['var'=>'THIS IS THE CART,THE ONLY CART']);
     }
 }
