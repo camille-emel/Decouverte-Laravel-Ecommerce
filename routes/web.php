@@ -9,7 +9,7 @@ Route::get('/', function () {
 Route::get('/product', function (){
     return 'product';
 });
-Route::get('/product/{id}', function ($id){
+Route::get('/product/{id}', function (int $id){
     return 'product'. $id;
 });
 Route::get('/cart', function (){
